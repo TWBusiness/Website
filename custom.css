@@ -1,0 +1,76 @@
+.custom-navbar .navbar-nav .dropdown-menu {
+    background-color: #ffffff;
+    border: none;
+    -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.custom-navbar .navbar-nav .dropdown-menu > li > a {
+    color: #575757;
+    padding: 10px 20px;
+}
+
+.custom-navbar .navbar-nav .dropdown-menu > li > a:hover {
+    color: #ce3232;
+}
+
+.pricing-thumb {
+    text-align: left; /* Ensure the entire pricing block is left-aligned */
+    padding: 20px; /* Add padding inside the pricing block */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+    background-color: #fff; /* White background */
+    margin-bottom: 30px; /* Space between pricing blocks */
+}
+
+.pricing-title {
+    text-align: left; /* Ensure the title within the pricing block is left-aligned */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.pricing-title h3 {
+    text-align: left; /* Explicitly left-align the h3 within pricing-title */
+    font-size: 24px; /* Larger font size for headings */
+    font-weight: 600; /* Slightly bolder */
+    color: #333; /* Darker color for headings */
+    margin-bottom: 5px; /* Small margin below h3 */
+}
+
+.pricing-title em {
+    font-size: 14px; /* Adjusted size for 'coming soon' text to be smaller */
+    color: #777; /* Softer color */
+}
+
+.pricing-item {
+    padding: 12px 0 12px 15px; /* Adjusted padding for rows */
+    border-bottom: 1px solid #e0e0e0; /* Lighter border for separation */
+    display: flex;
+    justify-content: flex-start; /* Align items to the start (left) */
+    align-items: center;
+}
+
+.pricing-item:last-child {
+    border-bottom: none; /* No border for the last item in a block */
+}
+
+.pricing-description p {
+    margin: 0;
+    font-size: 13px; /* Changed font size to 13px */
+    color: #444; /* Darker color for better contrast */
+    text-align: left;
+    line-height: 1.4; /* Improve line spacing */
+}
+
+.pricing-price {
+    margin-left: auto; /* Push the price to the right while keeping description left */
+}
+
+.pricing-price .pricing-dollar {
+    font-size: 15px; /* Changed font size to 15px */
+    font-weight: bold;
+    color: #ce3232; /* Changed price color to #ce3232 */
+    text-align: left; /* Changed to left-align the price */
+    display: block;
+}
