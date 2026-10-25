@@ -16,6 +16,281 @@
     color: #ce3232;
 }
 
+/* Tighter menu spacing so all links and the Book Online button fit on one row */
+@media (min-width: 768px) {
+    .custom-navbar .navbar-nav-first > li > a {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+/* Logo: a fixed size instead of a percentage of the screen width */
+#Logo {
+    width: 44px;
+    height: auto;
+    margin: -2px 10px 0 0;
+}
+
+@media (max-width: 767px) {
+    #Logo {
+        width: 36px;
+        margin: 2px 6px 0 0;
+    }
+}
+
+/* ===========================================================
+   PAGE STANDARD
+   Every page uses the same building blocks below. Images are
+   sized here (not in the HTML), so a new image of any shape
+   fits the layout without per-page adjustments.
+   =========================================================== */
+
+/* PAGE HEADER: service, pricing and contact pages */
+.page-hero {
+    padding: 115px 0 30px; /* top padding clears the fixed menu */
+}
+
+.page-hero-inner {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.page-hero-text,
+.page-hero-image {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.page-hero-image {
+    text-align: center;
+}
+
+/* Header without an image (e.g. Contact): keep the title box the same width as on other pages */
+.page-hero-text:only-child {
+    flex: 0 1 50%;
+}
+
+.page-hero-image img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 380px;
+    border-radius: 8px;
+}
+
+.page-hero .service {
+    padding: 2.5rem 2rem;
+    border-radius: 10px;
+    background: url(Service.jpg) center / cover no-repeat;
+}
+
+.page-hero .service h3 {
+    color: #333333;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+
+.page-hero .service h1 {
+    color: #333333;
+    margin: 0;
+}
+
+.page-hero + section {
+    padding-top: 60px;
+}
+
+@media (max-width: 991px) {
+    .page-hero + section {
+        padding-top: 35px;
+    }
+}
+
+/* ABOUT SECTIONS: text and image side by side, vertically centred */
+.about-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+/* Bootstrap's clearfix pseudo-elements would otherwise become flex items */
+.about-row:before,
+.about-row:after,
+.team-row:before,
+.team-row:after {
+    display: none;
+}
+
+.about-row .about-info {
+    padding-bottom: 0;
+}
+
+.about-image {
+    position: relative;
+    text-align: center;
+}
+
+.about-image img {
+    width: auto;
+    max-width: 100%;
+    max-height: 400px;
+}
+
+/* TEAM CARDS: same photo size on every page, cards centred */
+.team-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-row > .col-md-12 {
+    width: 100%;
+}
+
+.team-thumb {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+/* The photo files have empty space above and below the circle; crop to it */
+.team-thumb .team-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 38%;
+}
+
+.team-thumb .team-hover {
+    top: 3.5%;
+    right: 3.5%;
+    bottom: 3.5%;
+    left: 3.5%;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+}
+
+.team-thumb .team-item {
+    width: 80%;
+}
+
+.team-thumb .team-item h4 {
+    font-size: 16px;
+    margin: 0;
+}
+
+@media (max-width: 1199px) {
+    .page-hero {
+        padding-top: 150px; /* menu wraps onto two rows */
+    }
+}
+
+@media (max-width: 991px) {
+    .page-hero {
+        padding-top: 190px; /* menu wraps onto three rows */
+    }
+
+    .about-row {
+        padding-bottom: 60px;
+    }
+
+    .about-row > [class*="col-"] {
+        width: 100%;
+    }
+
+    .about-image {
+        margin-top: 35px;
+    }
+
+    .about-image img {
+        max-height: 300px;
+    }
+
+    .team-thumb {
+        width: 190px;
+        height: 190px;
+    }
+}
+
+@media (max-width: 767px) {
+    .page-hero {
+        padding: 95px 0 10px;
+    }
+
+    .page-hero-inner {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .page-hero-text,
+    .page-hero-image {
+        flex: none;
+        width: 100%;
+    }
+
+    .page-hero-image img {
+        max-height: 260px;
+    }
+
+    .page-hero .service {
+        padding: 1.75rem 1.5rem;
+    }
+
+    /* Two team members per row on phones */
+    .team-row > [class*="col-"]:not(.col-md-12) {
+        width: 50%;
+    }
+
+    .team-thumb {
+        width: 140px;
+        height: 140px;
+    }
+
+    .team-info {
+        padding: 10px 0 0;
+        margin-bottom: 30px;
+    }
+
+    .team-info h3 {
+        font-size: 16px;
+    }
+
+    .team-info p {
+        font-size: 11px;
+    }
+}
+
+/* SERVICE PAGE BUTTONS */
+.about-actions {
+    margin-top: 25px;
+}
+
+.about-actions .section-btn {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.about-actions .section-btn:hover,
+.about-actions .section-btn:focus {
+    background: #292929;
+    color: #ffffff;
+}
+
+.about-actions .about-link {
+    color: #ce3232;
+    font-weight: bold;
+}
+
+.about-actions .about-link:hover,
+.about-actions .about-link:focus {
+    color: #292929;
+}
+
 /* PRICING PAGE */
 #pricing {
     background: #f9f9f9;
