@@ -80,9 +80,13 @@
 }
 
 .page-hero .service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    aspect-ratio: 3 / 1; /* tall enough that the whole wave in Service.jpg stays visible */
     padding: 2.5rem 2rem;
     border-radius: 10px;
-    background: url(Service.jpg) center / cover no-repeat;
+    background: url(Service.jpg) center 80% / cover no-repeat;
 }
 
 .page-hero .service h3 {
