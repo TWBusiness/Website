@@ -16,61 +16,255 @@
     color: #ce3232;
 }
 
-.pricing-thumb {
-    text-align: left; /* Ensure the entire pricing block is left-aligned */
-    padding: 20px; /* Add padding inside the pricing block */
-    border-radius: 8px; /* Slightly rounded corners */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Subtle shadow */
-    background-color: #fff; /* White background */
-    margin-bottom: 30px; /* Space between pricing blocks */
+/* PRICING PAGE */
+#pricing {
+    background: #f9f9f9;
+    padding: 80px 0;
 }
 
-.pricing-title {
-    text-align: left; /* Ensure the title within the pricing block is left-aligned */
-    margin-bottom: 20px; /* Space below the title */
+#pricing .section-title {
+    text-align: center;
+    padding-bottom: 25px;
 }
 
-.pricing-title h3 {
-    text-align: left; /* Explicitly left-align the h3 within pricing-title */
-    font-size: 24px; /* Larger font size for headings */
-    font-weight: 600; /* Slightly bolder */
-    color: #333; /* Darker color for headings */
-    margin-bottom: 5px; /* Small margin below h3 */
+/* Jump links to each service */
+.price-jump {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.pricing-title em {
-    font-size: 14px; /* Adjusted size for 'coming soon' text to be smaller */
-    color: #777; /* Softer color */
-}
-
-.pricing-item {
-    padding: 12px 0 12px 15px; /* Adjusted padding for rows */
-    border-bottom: 1px solid #e0e0e0; /* Lighter border for separation */
-    display: flex;
-    justify-content: flex-start; /* Align items to the start (left) */
-    align-items: center;
-}
-
-.pricing-item:last-child {
-    border-bottom: none; /* No border for the last item in a block */
-}
-
-.pricing-description p {
-    margin: 0;
-    font-size: 13px; /* Changed font size to 13px */
-    color: #444; /* Darker color for better contrast */
-    text-align: left;
-    line-height: 1.4; /* Improve line spacing */
-}
-
-.pricing-price {
-    margin-left: auto; /* Push the price to the right while keeping description left */
-}
-
-.pricing-price .pricing-dollar {
-    font-size: 15px; /* Changed font size to 15px */
+.price-jump a {
+    display: inline-block;
+    margin: 0 4px 10px;
+    padding: 8px 18px;
+    border: 1px solid #d9d9d9;
+    border-radius: 30px;
+    background: #ffffff;
+    color: #292929;
+    font-size: 12px;
     font-weight: bold;
-    color: #ce3232; /* Changed price color to #ce3232 */
-    text-align: left; /* Changed to left-align the price */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.price-jump a:hover,
+.price-jump a:focus {
+    border-color: #ce3232;
+    background: #ce3232;
+    color: #ffffff;
+}
+
+/* Current promotions box */
+.price-promo {
+    background: #ffffff;
+    border-top: 4px solid #ce3232;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.price-promo h3 {
+    color: #ce3232;
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+
+.price-promo h3 .fa {
+    margin-right: 10px;
+}
+
+.price-promo-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.price-promo-item {
+    flex: 1 1 220px;
+    background: #fdf4f4;
+    border-radius: 8px;
+    padding: 18px 20px;
+}
+
+.price-promo-label {
     display: block;
+    color: #ce3232;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.price-promo-item h4 {
+    color: #292929;
+    font-size: 17px;
+    margin: 4px 0 8px;
+}
+
+.price-promo-item p {
+    margin: 0;
+    font-weight: normal;
+}
+
+.price-promo-item s {
+    color: #909090;
+    margin: 0 4px;
+}
+
+.price-promo-item strong {
+    color: #ce3232;
+    font-size: 18px;
+}
+
+/* Service cards */
+.price-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 35px 30px;
+    margin-bottom: 30px;
+    scroll-margin-top: 100px; /* keeps the title clear of the fixed menu when using the jump links */
+}
+
+.price-info h3 {
+    color: #292929;
+    font-size: 26px;
+    margin: 0 0 12px;
+}
+
+.price-info .section-btn {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.price-info .section-btn:hover,
+.price-info .section-btn:focus {
+    background: #292929;
+    color: #ffffff;
+}
+
+.price-tag-new {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+    padding: 3px 10px;
+    border-radius: 30px;
+    background: #5d6b5e;
+    color: #ffffff;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.price-tip {
+    background: #f9f9f9;
+    border-left: 3px solid #8e9c87;
+    padding: 10px 14px;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 21px;
+}
+
+.price-group + .price-group {
+    margin-top: 30px;
+}
+
+.price-group-title {
+    color: #292929;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ce3232;
+}
+
+.price-group-title span {
+    color: #909090;
+    font-weight: normal;
+    letter-spacing: 0;
+    text-transform: none;
+    margin-left: 4px;
+}
+
+.price-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px 20px;
+    padding: 14px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.price-row:last-child {
+    border-bottom: none;
+}
+
+.price-name {
+    flex: 1 1 160px;
+    color: #292929;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.price-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.price-chip {
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10px;
+    min-width: 108px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background: #f4f4f4;
+}
+
+.price-time {
+    color: #575757;
+    font-size: 12px;
+}
+
+.price-amount {
+    color: #ce3232;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.price-note {
+    text-align: center;
+    margin: 10px 0 0;
+}
+
+.price-note a {
+    color: #ce3232;
+    white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+    .price-info {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    #pricing {
+        padding: 50px 0;
+    }
+
+    .price-promo,
+    .price-card {
+        padding: 25px 20px;
+    }
+
+    .price-options {
+        justify-content: flex-start;
+    }
 }
