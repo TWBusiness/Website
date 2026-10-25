@@ -539,6 +539,11 @@
         padding: 25px 20px;
     }
 
+    /* Always put the price tags on their own line under the treatment name */
+    .price-name {
+        flex-basis: 100%;
+    }
+
     .price-options {
         justify-content: flex-start;
     }
