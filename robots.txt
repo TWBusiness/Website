@@ -1,0 +1,5 @@
+# Allow all search engines and AI crawlers to read the whole site
+User-agent: *
+Allow: /
+
+Sitemap: https://www.tru-well.ca/sitemap.xml

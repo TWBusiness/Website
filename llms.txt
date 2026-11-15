@@ -1,0 +1,27 @@
+# TruWell Wellness Clinic
+
+> TruWell Wellness Clinic is a health and wellness clinic in northwest Calgary, Alberta, Canada, offering chiropractic care, registered massage therapy, acupuncture and osteopathy. Direct billing to insurance is available. Appointments can be booked online at https://tru-well.janeapp.com/
+
+## Clinic details
+
+- Address: 4004 19 St NW, Suite 1, Calgary, Alberta T2L 2B6, Canada
+- Phone: 403-764-4039
+- Email: info@tru-well.ca
+- Hours: Monday to Friday 9:00 AM to 8:00 PM; Saturday 10:00 AM to 5:00 PM; Sunday closed
+- Parking: Free parking directly outside the clinic, with street parking nearby
+- Insurance: Direct billing to insurance available
+- Online booking: https://tru-well.janeapp.com/
+- Instagram: https://www.instagram.com/truwell.wellness.clinic/
+
+## Services, practitioners and prices (CAD)
+
+- [Chiropractic](https://www.tru-well.ca/Chiropractic.html): Dr. Tamara Robinson and Dr. Shyler Howe. Initial Chiropractic Visit (30 min) $110; Follow-up Visit (15 min) $65
+- [Massage Therapy](https://www.tru-well.ca/Massage.html): Registered massage therapists OJ Rounce and Bayarmaa Sengee (head and scalp massage with OJ Rounce). Therapeutic Massage (30 min) $65; Therapeutic Massage (45 min) $80; Therapeutic Massage (60 min) $110; Therapeutic Massage (90 min) $150; Relaxation Massage (60 min) $110; Relaxation Massage (90 min) $150; Lymphatic Massage (60 min) $110; Lymphatic Massage (90 min) $150; Deep Tissue Massage (60 min) $110; Deep Tissue Massage (90 min) $150; Hot Stone Therapeutic Massage: Targeted Area (60 min) $140; Hot Stone Therapeutic Massage: Whole Body (90 min) $180; Hot Stone Therapeutic Massage: Whole Body (120 min) $220; Head & Scalp Massage (30 min) $50; Therapeutic + Head & Scalp Massage (75 min) $140
+- [Acupuncture](https://www.tru-well.ca/Acupuncture.html): Dr. Esther Hyun, R.Ac, TCMD. Initial Assessment (90 min) $120; Follow-up Visit (60 min) $100; Cupping (30 min) $45
+- [Osteopathy](https://www.tru-well.ca/Osteopathy.html): Deepinder Minhas. Osteopathy Treatment (45 min) $140
+
+## Pages
+
+- [Home](https://www.tru-well.ca/): About the clinic and the team
+- [Pricing](https://www.tru-well.ca/Pricing.html): Full price list and current promotions
+- [Contact](https://www.tru-well.ca/Contact.html): Map, contact form and opening hours

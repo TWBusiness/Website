@@ -333,6 +333,18 @@
     color: #ffffff;
 }
 
+/* Direct billing note under the jump links */
+.price-billing {
+    text-align: center;
+    color: #292929;
+    margin: -15px 0 35px;
+}
+
+.price-billing .fa {
+    color: #5d6b5e;
+    margin-right: 8px;
+}
+
 /* Current promotions box */
 .price-promo {
     background: #ffffff;
