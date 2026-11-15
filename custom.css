@@ -269,6 +269,45 @@
     }
 }
 
+/* HOME PAGE HEADINGS
+   Search engines expect one h1 per page: the slider headings are h2 and the
+   welcome heading is the h1, each styled to look as it did before. */
+#home .slide-title {
+    color: #333333;
+    font-size: 3em;
+    line-height: 50px;
+    padding-bottom: 30px;
+}
+
+.about-info .section-title .about-title {
+    color: #353535;
+    font-size: 2em;
+    line-height: inherit;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    #home .slide-title {
+        font-size: 2.5em;
+        line-height: normal;
+    }
+
+    .about-info .section-title .about-title {
+        line-height: normal;
+    }
+}
+
+@media (max-width: 580px) {
+    #home .slide-title {
+        font-size: 2.1em;
+    }
+
+    .about-info .section-title .about-title {
+        font-size: 1.8em;
+    }
+}
+
 /* SERVICE PAGE BUTTONS */
 .about-actions {
     margin-top: 25px;
